@@ -68,13 +68,17 @@ angular.module('tag-controller', ['registry-services'])
         }
       }
     });
-      
 
-    
+    // Set the default sort type
+    $scope.sortType     = 'details.created';
+
+    // Set the default sort order
+    $scope.sortReverse  = true;
+
     // Copy collection for rendering in a smart-table
     $scope.displayedTags = [].concat($scope.tags);
 
-    
+
     // selected tags
     $scope.selection = [];
 

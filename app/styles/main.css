@@ -5,6 +5,10 @@
   flex-direction: column;
 }
 
+table.is--sortable thead th {
+  cursor: pointer;
+}
+
 /* Display all links inside tables as blocks which should make them easier to click*/
 table a {
   display: block;
