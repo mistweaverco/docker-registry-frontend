@@ -6,6 +6,11 @@ The `docker-registry-frontend` is a browser-based solution for browsing and modi
 
 ...make sure you have consulted the `example-setup/README.md`.
 
+## Maintainers
+
+- [Kluless](https://github.com/PhillipAmend)
+- [Gorilla Moe](https://github.com/gorillamoe)
+
 ## Credits
 
 This is a hard-fork of https://github.com/kwk/docker-registry-frontend.
