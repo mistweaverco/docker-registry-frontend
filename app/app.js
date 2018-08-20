@@ -60,18 +60,18 @@ angular
         templateUrl: 'repository/repository-list.html',
         controller: 'RepositoryListController'
       }).
-      when('/repository/:repositoryUser/:repositoryName', {
+      when('/repository/:repositoryUser*/:repositoryName', {
         templateUrl: 'repository/repository-detail.html',
         controller: 'RepositoryDetailController'
       }).
-      when('/repository/:repositoryName', {
+      when('/repository/:repositoryName*', {
         templateUrl: 'repository/repository-detail.html',
         controller: 'RepositoryDetailController'
       }).
 	    when('/about', {
         templateUrl: 'about.html',
       }).
-      when('/tag/:repositoryUser?/:repositoryName/:tagName/', {
+      when('/tag/:repositoryUser*?/:repositoryName/:tagName/', {
         templateUrl: 'tag/tag-detail.html',
         controller: 'TagController',
       }).
@@ -79,7 +79,7 @@ angular
         templateUrl: 'tag/image-detail.html',
         controller: 'ImageController',
       }).
-      when('/image/:imageId/tag/:repositoryUser?/:repositoryName?', {
+      when('/image/:imageId/tag/:repositoryUser*?/:repositoryName?', {
         templateUrl: 'tag/create-tag.html',
         controller: 'CreateTagController',
       }).
